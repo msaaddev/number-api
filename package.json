@@ -1,0 +1,15 @@
+{
+	"name": "number-api",
+	"description": "An API built around numbers",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon index.js"
+	},
+	"dependencies": {
+		"express": "^4.18.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.19"
+	}
+}
