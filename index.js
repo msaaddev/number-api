@@ -14,6 +14,14 @@ const even = require('./routes/even');
 app.use(express.json());
 
 // adding routes
+app.get('/', (req, res) => {
+    const welcome = {
+        msg: 'Welcome to the Number API',
+        endpoints: ['/number', '/even'],
+    };
+
+    res.json(welcome);
+});
 app.use('/number', number);
 app.use('/even', even);
 
